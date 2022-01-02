@@ -4,15 +4,15 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 490971871466.dkr.ecr.ap-south-1.amazonaws.com
+      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 364507456336.dkr.ecr.ap-south-1.amazonaws.com
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t traing  .
-      - docker tag traing:latest 490971871466.dkr.ecr.ap-south-1.amazonaws.com/traing:latest
+      - docker build -t my_repository .
+      - docker tag my_repository:latest 364507456336.dkr.ecr.ap-south-1.amazonaws.com/my_repository:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 490971871466.dkr.ecr.ap-south-1.amazonaws.com/traing:latest
+      - docker push 364507456336.dkr.ecr.ap-south-1.amazonaws.com/my_repository:latest
