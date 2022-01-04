@@ -1,6 +1,6 @@
 [
    {
-         "name": "traing",
+         "name": "my_repository",
          "imageUri": "490971871466.dkr.ecr.ap-south-1.amazonaws.com/my_repository:latest"
    }
 ]
