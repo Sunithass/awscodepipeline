@@ -1,6 +1,6 @@
 [
    {
-         "name": "aws_training_morning",
-         "imageUri": "364507456336.dkr.ecr.us-east-1.amazonaws.com/aws_training_morning:latest"
+         "name": "my_repository",
+         "imageUri": "740593519937.dkr.ecr.us-east-1.amazonaws.com/my_repository:latest"
    }
 ]
