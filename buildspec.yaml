@@ -10,9 +10,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t my_repository .
-      - docker tag aws_my_repository 740593519937.dkr.ecr.us-east-1.amazonaws.com/my_repository
+      - docker tag my_repository:latest 740593519937.dkr.ecr.us-east-1.amazonaws.com/my_repository:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 740593519937.dkr.ecr.us-east-1.amazonaws.com/my_repository
+      - docker push 740593519937.dkr.ecr.us-east-1.amazonaws.com/my_repository:latest
